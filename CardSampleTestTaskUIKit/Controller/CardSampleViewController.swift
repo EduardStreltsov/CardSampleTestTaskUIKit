@@ -210,7 +210,7 @@ extension CardSampleViewController {
 		let pattern = "^(0[1-9]|1[0-2])/(\\d{2})$"
 		let result = getUnwrappedTextFieldValue(expireDate).range(of: pattern, options: .regularExpression)
 		if result == nil {
-			errorMessage = errorMessage + "Expiration date is incorrect"
+			errorMessage = errorMessage + "Expiration date is incorrect\n"
 		}
 		
 		if getTextFieldInputCount(securityCode) != 3 {
